@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.modalContainer {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  border: 1px solid #009ffd;
+}
+
+.title {
+  font-size: 26px;
+  color: #009ffd;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modalContainer .body {
+  margin: 20px 0;
+}
+
+.modalContainer .body input[type="text"],
+.modalContainer .body select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #009ffd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modalContainer .body input[type="text"]:focus,
+.modalContainer .body select:focus {
+  border-color: #007acc;
+  outline: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modalContainer .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modalContainer .footer button {
+  background-color: #009ffd;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 120px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.modalContainer .footer button:hover {
+  background-color: #007acc;
+  transform: scale(1.05);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+/* Custom styles for the dropdown list */
+.modalContainer .body select {
+  appearance: none;
+  background: url('./down-arrow.png') no-repeat right center;
+  padding-right: 20px;
+  font-weight: 500;
+}

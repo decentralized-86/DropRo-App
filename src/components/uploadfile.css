@@ -1,0 +1,74 @@
+.top {
+  margin: 20px 40px 40px;
+  position: relative;
+  right: 20%;
+  top: -80px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.choose {
+  background-color: initial;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 3px 8px; 
+  border-radius: 6px;
+  margin-right: 10px;
+  padding-bottom: 8px; 
+  position: relative;
+  z-index: 1;
+}
+
+.choose img {
+  cursor: pointer;
+  max-width: 400px;
+  max-height: 450px;
+}
+
+.choose:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.textArea {
+  color: grey;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  padding: 3px 8px; /* Adjusted padding */
+  text-align: center;
+  z-index: 2;
+}
+
+.upload {
+  border: 1px solid #13aa52;
+  background-color: #13aa52;
+  color: #ffffff;
+  padding: 3px 8px; /* Adjusted padding */
+  border-radius: 6px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.upload:hover {
+  border: 1px solid #13aa52;
+  background-color: #a5efc1;
+  color: #ffffff;
+  padding: 3px 8px; /* Adjusted padding */
+}
+
+.upload:disabled,
+.upload[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+div {
+  padding: 3px 8px; /* Adjusted padding */
+}

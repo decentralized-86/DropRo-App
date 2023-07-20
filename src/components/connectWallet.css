@@ -1,0 +1,20 @@
+.connect-wallet-button {
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff; /* White background */
+  color: #000851; /* Dark blue text */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for the hover transform and shadow */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.connect-wallet-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Darker shadow when hovered */
+}

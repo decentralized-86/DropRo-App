@@ -1,0 +1,45 @@
+.file-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .file-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .file-card a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .file-card p {
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+  
+  .file-icon {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .file-card:hover .file-icon {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
