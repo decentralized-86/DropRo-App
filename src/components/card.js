@@ -4,6 +4,8 @@ import galleryImg from './gallery.png';
 import documentImg from './document.png';
 import pdfImg from './pdf.png';
 
+// ... (import statements)
+
 const Card = ({ file }) => {
     const isImage = file.endsWith(".jpg") || file.endsWith(".jpeg") || file.endsWith(".png");
     const isPDF = file.endsWith(".pdf");
@@ -25,6 +27,9 @@ const Card = ({ file }) => {
         return name;
     };
 
+    // Log the correct URL before constructing the anchor element
+    console.log(`URL: https://ipfs.io/ipfs/${file}`);
+
     // Get filename from file path and shorten it
     const fileName = file.substring(file.lastIndexOf("/") + 1);
     const shortFileName = shortenFileName(fileName);
@@ -32,7 +37,7 @@ const Card = ({ file }) => {
     return (
         <div className="file-card">
             <a
-                href={`https://gateway.pinata.cloud/ipfs/${file.substring(6)}`}
+                href={`https://ipfs.io/ipfs/${file}`}
                 target="_blank"
                 rel="noopener noreferrer"
             >

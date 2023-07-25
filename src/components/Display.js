@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Display.css";
 import Card from './card'
 
-const Display = ({ Contract, setDisplay, Account }) => {
+const Display = ({ Contract, setDisplay }) => {
   const [Data, setData] = useState([]);
   const [addressInput, setAddressInput] = useState("");
 
@@ -17,6 +17,7 @@ const Display = ({ Contract, setDisplay, Account }) => {
   const handleGetData = async () => {
     let getData;
     const address = addressInput.trim();
+    console.log(address)
 
     if (address) {
       try {
@@ -25,8 +26,9 @@ const Display = ({ Contract, setDisplay, Account }) => {
         console.log(e);
       }
     }
-
+    console.log(getData)
     const isEmpty = Object.keys(getData).length === 0;
+    console.log(isEmpty);
     if (!isEmpty) {
       const string = getData.toString();
       const string_arr = string.split(",");

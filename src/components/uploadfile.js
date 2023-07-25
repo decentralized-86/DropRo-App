@@ -25,8 +25,9 @@ const Uploadfile = ({ Contract, Provider, Account }) => {
             },
           }
         );
+        console.log(resFile);
         const IpfsHash = `ipfs://${resFile.data.IpfsHash}`;
-        console.log("got the hash" + IpfsHash);
+        console.log("got the hash " + IpfsHash);
         await Contract.add(Account, IpfsHash);
         alert("Successfully uploaded the file");
         setFilename("No file selected");
